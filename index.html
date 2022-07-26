@@ -11,6 +11,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			#me {
+				  height: auto;
+				  max-width: auto;
+			}
+			#paa{
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			.center {
+				display: flex;
+				justify-content: center;
+			}
+			</style>
 	</head>
 	<body class="is-preload">
 
@@ -20,8 +38,10 @@
 					<nav>
 						<ul>
 							<li><a href="#intro">Who am I?</a></li>
-							<li><a href="#one">Algunos proyectos</a></li>
-							<li><a href="#two">Habilidades e intereses</a></li>
+							<li><a href="#experience">Experience</a></li>
+							<li><a href="#education">Education</a></li>
+							<li><a href="#one">Some projects</a></li>
+							<li><a href="#two">Skills and interests</a></li>
 							<li><a href="#three">Contact</a></li>
 						</ul>
 					</nav>
@@ -34,26 +54,65 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<meta name="viewport" content="width=device-width, initial-scale=1.0">
-						<style>
-						.me img {
-							
-  							max-width: 100%;
-  							height: auto;
 
-						}
-						</style>
-						<div class = "me">
-							<img src="images/perfil2.jpeg">
-							</div>
 						<div class="inner">
-							<h1>¡Hola mundo! Soy Víctor</h1>
-								<p>Soy un estudiante de Ingenería de Telecomunicaciones, especialidad Ingeniería Telemática, buscando mi primera experiencia profesional
-							que me permita desarrollarme tanto profesional como personalmente.</p>
-							<p>Puedes ver algunos proyectos personales en mi <a href="https://github.com/rinvictor">Github</a> o consultar mi CV
-							en <a href="docs/CV_Victor_Manuel_Rincón_Yepes_ES.pdf">español</a> o en 
-							<a href="docs/CV_Victor_Manuel_Rincón_Yepes_EN.pdf">inglés</a>.</p></p>
+							<img id="me" class="image" src="images/perfil2.jpeg">
+
+							<h1>Hello world! I'm Víctor</h1>
+								<p>I have studied Telecommunications Engineering with a major in Telematics Engineering.
+									 My main interests are software development and working with data (I would like to learn more about data science, big data, machine and deep learning...).
+									 I hope this small personal website can help you to know a little bit more about me.</p>
+							<p>You can have a look to my CV in <a href="docs/CV_Victor_Manuel_Rincón_Yepes_ES.pdf">Spanish</a> or 
+							<a href="docs/CV_Victor_Manuel_Rincón_Yepes_EN.pdf">English</a>.</p></p>
 						</div>
 					</section>
+
+				<!-- Experience-->
+					<section class="wrapper style2 fade-up" id="experience">
+						<div class="inner">
+							<div>
+								<div>
+									<h2>Junior Software Developer</h2>
+									<h3>Vexcel Imaging</h3>
+									<h4>August 2022 - Present</h4>
+									<p>Developing in different technologies such as Python, Java(Spring) and PostgreSQL.<br>
+										Usage of tools like git and jira</p>
+								</div>
+							</div>
+							<hr/>
+							<div>
+								<div>
+									<h2>Software Developer Intern</h2>
+									<h3>Vexcel Imaging</h3>
+									<h4>January 2022 - July 2022</h4>
+									<p>Developing in different technologies such as Python, Java(Spring) and PostgreSQL.<br>
+									Usage of tools like git and jira</p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- Education-->
+					<section class="wrapper style5 fade-up" id="education">
+						<div class="inner">
+							<div>
+								<div>
+									<h2>Bachelor's degree in Telematics Engineering</h2>
+									<h3>Universidad Rey Juan Carlos</h3>
+									<h4>September 2017 - June 2022</h4>
+								</div>
+							</div>
+							<hr/>
+							<div>
+								<div>
+									<h2>High school</h2>
+									<h3>Liceo San Pablo</h3>
+									<h4>September 2015 - May 2017</h4>
+								</div>
+							</div>
+						</div>
+					</section>
+									
 
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
@@ -61,12 +120,20 @@
 							<a href="#" class="image"><img src="images/invernadero.jpg" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Mi Trabajo de Fin de Grado</h2>
-									<p>Creación de un sistema distribuido para la monitorización y automatización de un invernadero.</p>
-									<p>Pronto...</p>
-									<ul class="actions">
-										<li><a href="https://github.com/rinvictor">Leer más</a></li>
-									</ul>
+									<h2>My end-of-degree thesis</h2>
+									<h4>Develop of an automation and monitoring distributed system for a greenhouse.</h4>
+									<p>This open-source project consists in the development of a complete distributed system that allows obtaining and storing the information collected by the sensors,
+										 visualizing it through a web application and a Telegram bot and taking actions using controllers, 
+										 both automatically and manually.</p>
+
+									<p>It was scored with the highest grade and with honors!</p>
+									<p>You can take a look to all the code and the documentation (in Spanish) <a href="https://github.com/rinvictor/TFG">here</a></p>
+									<p>This is a demo of the web application and the Telegram bot:</p>
+									<div class="center">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/9Y3vQupzTOg" 
+										title="YouTube video player" frameborder="0" 
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
 								</div>
 							</div>
 						</section>
@@ -74,10 +141,10 @@
 							<a href="#" class="image"><img src="images/logo_github.png" alt="" data-position="top center" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Otros proyectos</h2>
-									<p>Aquí se pueden ver otros proyectos que he ido realizando.</p>
+									<h2>Other projects</h2>
+									<p>Here you can see other projects that I have been doing.</p>
 									<ul class="actions">
-										<li><a href="https://github.com/rinvictor">Ver más proyectos</a></li>
+										<li><a href="https://github.com/rinvictor">View more projects</a></li>
 									</ul>
 								</div>
 							</div>
@@ -87,9 +154,9 @@
 				<!-- Two -->
 					<section id="two" class="wrapper style3 fade-up">
 						<div class="inner">
-							<h2>Sobre mí</h2>
-							<p>Me considero una persona responsable, polivalente y entusiasta. Tengo facilidad para el trabajo en equipo
-							y me gustaría continuar aprendiendo.</p>
+							<h2>About me</h2>
+							<p>I consider myself a responsible, versatile and enthusiast person. 
+								I have a facility for working in a team and I would like to continue learning.</p>
 							<div class="features">
 								<section>
 									<span class="icon solid major fa-code"></span>
@@ -111,12 +178,15 @@
 								</section>
 							</div>
 						</div>
+
 					</section>
+
+
 
 				<!-- Three -->
 					<section id="three" class="wrapper style1 fade-up">
 						<div class="inner">
-							<h2>Contáctame</h2>
+							<h2>Get in touch</h2>
 							<div class="split style1">
 								<section>
 									<form action="https://formspree.io/f/mleznbea" method="post">
@@ -159,7 +229,7 @@
 										</li>
 										<li>
 											<h3>Currículum Vitae</h3>
-												<a href="docs/CV_Victor_Manuel_Rincón_Yepes_ES.pdf">Versión en español</a>
+												<a href="docs/CV_Victor_Manuel_Rincón_Yepes_ES.pdf">Versión en español</a><br>
 												<a href="docs/CV_Victor_Manuel_Rincón_Yepes_EN.pdf">English Version</a>
 										</li>
 									</ul>
