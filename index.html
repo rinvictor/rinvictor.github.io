@@ -53,7 +53,7 @@
 	<body class="is-preload">
 
 		<!-- Sidebar -->
-			<section id="sidebar">
+			<section id="sidebar" class="style1-alt">
 				<div class="inner">
 					<nav>
 						<ul>
@@ -78,7 +78,7 @@
 						<div class="inner">
 							<h1 class="center">Hello world! I'm Víctor</h1>
 								<p>I have studied Telecommunications Engineering with a major in Telematics Engineering.
-									 My main interests are software development and working with data (I would like to learn more about data science, big data, machine and deep learning...).
+									 My main interests are software development and working with data (I would like to learn more about data science, big data, machine and deep learning, neural networks...).
 									 I hope this small personal website can help you to know a little bit more about me.</p>
 							<p>You can have a look to my CV in <a href="docs/CV_Victor_Manuel_Rincón_Yepes_ES.pdf">Spanish</a> or 
 							<a href="docs/CV_Victor_Manuel_Rincón_Yepes_EN.pdf">English</a>.</p></p>
@@ -98,7 +98,7 @@
 									<h3>Vexcel Imaging</h3>
 									<h4>August 2022 - Present</h4>
 									<p>Developing in different technologies such as Python, Java(Spring) and PostgreSQL.<br>
-										Usage of tools like git and jira</p>
+										Usage of tools like Git, Jira or AWS</p>
 								</div>
 							</div>
 							<hr/>
@@ -107,15 +107,15 @@
 									<h2>Software Developer Intern</h2>
 									<h3>Vexcel Imaging</h3>
 									<h4>January 2022 - July 2022</h4>
-									<p>Developing in different technologies such as Python, Java(Spring) and PostgreSQL.<br>
-									Usage of tools like git and jira</p>
+									<p>Developing in different technologies such as Python, Java (Spring) and PostgreSQL.<br>
+									Usage of tools like Git and Jira</p>
 								</div>
 							</div>
 						</div>
 					</section>
 
 					<!-- Education-->
-					<section class="wrapper style5 fade-up" id="education">
+					<section class="wrapper style3 fade-up" id="education">
 						<div class="inner">
 							<div>
 								<div>
@@ -182,7 +182,7 @@
 					</section>
 
 				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
+					<section id="two" class="wrapper style4 fade-up">
 						<div class="inner">
 							<h2>About me</h2>
 							<h4>I consider myself a responsible, versatile and enthusiast person. 
@@ -206,6 +206,7 @@
 									<p>Sport: Volleyball, Madrid Volleyball Federation</p>
 									<p>Member of the academic board, college of Telecommunication Engineering, as students representative</p>
 									<p>Member of the Robotech students association (robotics and technology association)</p>
+									<p>I'm especially interested in learning more about big data, machine learning, data science, deep learning, neural networks...</p>
 								</section>
 							</div>
 						</div>
@@ -220,24 +221,28 @@
 							<h2>Get in touch</h2>
 							<div class="split style1">
 								<section>
-									<form action="https://formspree.io/f/mleznbea" method="post">
+									<form id="form" action="https://formspree.io/f/mleznbea" method="POST">
 										<div class="fields">
 											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
+												<label>
+													Your name:<input type="text" name="name">
+												</label>
 											</div>
 											<div class="field half">
-												<label for="email">Your email</label>
-												<input type="text" name="email" id="email" />
+												<label>
+													Your email:<input type="email" name="email">
+												</label>
 											</div>
 											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
+												<label>
+													Message: <textarea name="message" rows="5"></textarea>
+												</label>
 											</div>
+											
 										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
+
+   										<!-- your other form fields go here -->
+  										<button type="submit">Send Message</button>
 									</form>
 								</section>
 								<section>
@@ -271,7 +276,7 @@
 			</div>
 
 		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
+			<footer id="footer" class="wrapper style2-alt">
 				<div class="inner">
 					<ul class="menu">
 						<li>&copy; Untitled. All rights reserved.</li>
@@ -283,10 +288,15 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<!-- added -->
+			<script src="assets/js/form.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 	</body>
 </html>
