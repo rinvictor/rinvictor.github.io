@@ -12,10 +12,6 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			#me {
-				  height: auto;
-				  max-width: auto;
-			}
 			#paa{
 				margin: 0;
 				padding: 0;
@@ -27,6 +23,30 @@
 			.center {
 				display: flex;
 				justify-content: center;
+			}
+			.img{
+				margin:auto;
+				border-radius:5px;
+				width:900px;
+				height:900px;
+				background-size: 100% 100%;
+				background-repeat:no-repeat;
+				}
+			.img img{
+				width: 100%;
+			}
+			@media all and (min-width: 400px) and (max-width: 1000px)
+			{  
+			.img{
+				margin:auto;
+				border-radius:5px;
+				width:300px;
+				height:300px;
+				background-size: 100% 100%;
+			}
+			}
+			.img img{
+				width:100%;
 			}
 			</style>
 	</head>
@@ -56,17 +76,16 @@
 						<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 						<div class="inner">
-							<div class="center">
-								<img id="me" class="image" src="images/perfil2.jpeg">
-							</div>
-							
-
-							<h1>Hello world! I'm Víctor</h1>
+							<h1 class="center">Hello world! I'm Víctor</h1>
 								<p>I have studied Telecommunications Engineering with a major in Telematics Engineering.
 									 My main interests are software development and working with data (I would like to learn more about data science, big data, machine and deep learning...).
 									 I hope this small personal website can help you to know a little bit more about me.</p>
 							<p>You can have a look to my CV in <a href="docs/CV_Victor_Manuel_Rincón_Yepes_ES.pdf">Spanish</a> or 
 							<a href="docs/CV_Victor_Manuel_Rincón_Yepes_EN.pdf">English</a>.</p></p>
+
+							<div class="img">
+								<img id="img" class="image" src="images/perfil2.jpeg">
+							</div>
 						</div>
 					</section>
 
@@ -166,18 +185,19 @@
 					<section id="two" class="wrapper style3 fade-up">
 						<div class="inner">
 							<h2>About me</h2>
-							<p>I consider myself a responsible, versatile and enthusiast person. 
-								I have a facility for working in a team and I would like to continue learning.</p>
+							<h4>I consider myself a responsible, versatile and enthusiast person. 
+								I have a facility for working in a team and I would like to continue learning.</h4>
 							<div class="features">
 								<section>
 									<span class="icon solid major fa-code"></span>
 									<h3>Skills</h3>
-									<p>Programming: Python, Java, JavaScript, Go, C, ADA, Matlab, RISC-V assembler, Pascal...</p>
-									<p>Databases: SQL and NoSQL. I've worked mainly with PostgreSQL and MongoDB.</p>
-									<p>Knowledge in computer networking and their security (TCP, IP, IPsec, OSPF, HTTPS, VPNs...)</p>
-									<p>UNIX systems administration and management.</p>
+									<p><b>Programming</b> Python, Java, JavaScript, Go, C, ADA, Matlab, RISC-V assembler, Pascal...</p>
+									<p><b>Databases</b> SQL and NoSQL. I've worked mainly with PostgreSQL and MongoDB.</p>
+									<p>Knowledge in <b>computer networking</b> and their security (TCP, IP, IPsec, OSPF, HTTPS, VPNs...)</p>
+									<p><b>UNIX systems</b> administration and management.</p>
 									<p>Use of Office package at user level. </p>
-									<p>English: Advanced (C1)</p>
+									<p><b>English</b>: Advanced (C1)</p>
+									<p><b>Spanish</b>: Native speaker</p>
 								</section>
 								<section>
 									<span class="icon solid major fa-coffee"></span>
@@ -207,7 +227,7 @@
 												<input type="text" name="name" id="name" />
 											</div>
 											<div class="field half">
-												<label for="email">Email</label>
+												<label for="email">Your email</label>
 												<input type="text" name="email" id="email" />
 											</div>
 											<div class="field">
@@ -224,8 +244,7 @@
 									<ul class="contact">
 										<li>
 											<h3>Email</h3>
-											<span>rinvictor@gmail.com</span>
-											<span>vm.rincon.2017@alumnos.urjc.es</span>
+											<span><a href="mailto:rinvictor@gmail.com">rinvictor@gmail.com</a></span>
 										</li>
 										<li>
 											<h3>Phone</h3>
@@ -257,7 +276,7 @@
 					<ul class="menu">
 						<li>&copy; Untitled. All rights reserved.</li>
 						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						<li>Víctor Rincón Yepes</li>
+						<li><a href="#intro">Víctor Rincón Yepes</a></li>
 					</ul>
 				</div>
 			</footer>
