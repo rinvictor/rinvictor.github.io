@@ -1,0 +1,60 @@
+/* Language switching: hide whichever language is not active. */
+html[lang="en"] .lang-es,
+html[lang="es"] .lang-en {
+    display: none !important;
+}
+
+::selection {
+    background-color: #2563EB;
+    color: #FFFFFF;
+}
+
+html {
+    scroll-padding-top: 5rem;
+}
+
+/* Scale everything (rem-based) up a little on large screens */
+@media (min-width: 1280px) { html { font-size: 17px; } }
+@media (min-width: 1700px) { html { font-size: 18px; } }
+
+/* Soft background glow behind the hero */
+body {
+    background-image: radial-gradient(60rem 30rem at 85% -5%, rgba(37, 99, 235, 0.07), transparent 60%);
+    background-repeat: no-repeat;
+}
+
+/* Collapsible projects */
+details > summary {
+    list-style: none;
+}
+details > summary::-webkit-details-marker {
+    display: none;
+}
+details[open] summary ~ * {
+    animation: fadeIn 0.4s ease-in-out;
+}
+details[open] .toggle-icon {
+    transform: rotate(180deg);
+}
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Inline links inside body text */
+.text-link {
+    color: #2563EB;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: rgba(37, 99, 235, 0.3);
+    text-underline-offset: 3px;
+    transition: text-decoration-color 0.2s;
+}
+.text-link:hover {
+    text-decoration-color: #2563EB;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto !important; }
+    * { animation: none !important; transition: none !important; }
+}

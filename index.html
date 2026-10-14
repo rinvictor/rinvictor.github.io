@@ -1,315 +1,383 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Personal Web Víctor Rincón</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			#paa{
-				margin: 0;
-				padding: 0;
-				border: 0;
-				font-size: 100%;
-				font: inherit;
-				vertical-align: baseline;
-			}
-			.center {
-				display: flex;
-				justify-content: center;
-			}
-			.img{
-				margin:auto;
-				border-radius:5px;
-				width:900px;
-				height:900px;
-				background-size: 100% 100%;
-				background-repeat:no-repeat;
-				}
-			.img img{
-				width: 100%;
-			}
-			@media all and (min-width: 200px) and (max-width: 1000px)
-			{  
-			.img{
-				margin:auto;
-				border-radius:5px;
-				width:300px;
-				height:300px;
-				background-size: 100% 100%;
-			}
-			}
-			.img img{
-				width:100%;
-			}
-			</style>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Víctor Rincón Yepes | Senior Computer Vision & Deep Learning Engineer</title>
+    <meta name="description" content="Víctor Rincón Yepes — Senior Computer Vision & Deep Learning Engineer at Vexcel Data Program. Geospatial AI on very high-resolution aerial imagery.">
+    <meta property="og:title" content="Víctor Rincón Yepes | Senior Computer Vision & Deep Learning Engineer">
+    <meta property="og:description" content="Geospatial AI and production-scale computer vision on very high-resolution aerial imagery.">
+    <meta property="og:image" content="assets/img/victor.jpg">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="assets/img/victor.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind.config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/main.js"></script>
+</head>
+<body class="bg-background text-primary font-sans antialiased min-h-screen">
 
-		<!-- Sidebar -->
-			<section id="sidebar" class="style1-alt">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Who am I?</a></li>
-							<li><a href="#experience">Experience</a></li>
-							<li><a href="#education">Education</a></li>
-							<li><a href="#one">Some projects</a></li>
-							<li><a href="#two">Skills and interests</a></li>
-							<li><a href="#three">Contact</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 px-4 md:px-6 py-3 md:py-5 bg-background/80 backdrop-blur-md border-b border-gray-200/50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center gap-3">
+            <a href="#" class="font-bold text-lg tracking-tight">Víctor Rincón Yepes.</a>
+            <div class="flex items-center gap-4 md:gap-6">
+                <a href="#experience" class="text-sm font-medium text-muted hover:text-primary transition-colors hidden md:block"><span class="lang-en">Experience</span><span class="lang-es">Experiencia</span></a>
+                <a href="#education" class="text-sm font-medium text-muted hover:text-primary transition-colors hidden md:block"><span class="lang-en">Education</span><span class="lang-es">Educación</span></a>
+                <a href="#research" class="text-sm font-medium text-muted hover:text-primary transition-colors hidden md:block"><span class="lang-en">Research</span><span class="lang-es">Investigación</span></a>
+                <a href="mailto:rinvictor@gmail.com" class="text-sm font-medium text-muted hover:text-primary transition-colors hidden lg:block">rinvictor@gmail.com</a>
+                <button onclick="toggleLanguage()" aria-label="Switch language / Cambiar idioma" class="text-sm font-bold bg-white border border-gray-200 px-3 py-1.5 rounded-full hover:bg-gray-50 shadow-sm transition-all">
+                    <span class="lang-en">EN / <span class="text-gray-400 font-medium">ES</span></span>
+                    <span class="lang-es"><span class="text-gray-400 font-medium">EN</span> / ES</span>
+                </button>
+            </div>
+        </div>
+    </nav>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <main class="max-w-7xl mx-auto px-4 md:px-6 pt-24 md:pt-32 pb-16 md:pb-24">
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Hero -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center mb-16 md:mb-24">
 
-						<div class="inner">
-							<h1 class="center">Hello world! I'm Víctor</h1>
-								<p>I have studied Telecommunications Engineering with a minor in Telematics Engineering.
-									 My main interests are software development and working with data (I would like to learn more about data science, big data, machine and deep learning, neural networks...).
-									 I hope this small personal website can help you to know a little bit more about me.</p>
-							<p>You can have a look to my CV in <a href="docs/CV_EN_Victor_Rincon_Yepes_202210.pdf">English</a>.</p></p>
+            <div class="lg:col-span-7 order-2 lg:order-1 space-y-6">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-extrabold tracking-tight leading-[1.1]">
+                    <span class="lang-en">Senior Computer Vision</span><span class="lang-es">Ingeniero Senior de Visión Artificial</span><br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-500">
+                        <span class="lang-en">& Deep Learning Engineer.</span><span class="lang-es">y Deep Learning.</span>
+                    </span>
+                </h1>
 
-							<div class="img">
-								<img id="img" class="image" src="images/perfil2.jpeg">
-							</div>
-						</div>
-					</section>
+                <p class="text-base md:text-lg text-muted max-w-2xl leading-relaxed">
+                    <span class="lang-en">I am a Senior Computer Vision and Deep Learning Engineer at the intersection of Software Engineering and Geospatial Intelligence (GeoAI). Focused on AI and production-scale architectures. Specialized in very high-resolution aerial imagery at global scale, with models deployed across 5 continents processing millions of properties.</span>
+                    <span class="lang-es">Ingeniero sénior de visión artificial y deep learning y trabajo en la intersección entre la ingeniería de software y la inteligencia geoespacial (GeoAI). Me centro en tareas de inteligencia artificial y en arquitecturas a escala de producción. Estoy especializado en imágenes aéreas de muy alta resolución a escala global, con modelos desplegados en los cinco continentes que procesan millones de propiedades.</span>
+                </p>
 
-				<!-- Experience-->
-					<section class="wrapper style2 fade-up" id="experience">
-						<div class="inner">
-							<div>
-								<div>
-									<h2>Junior Software Developer</h2>
-									<h3>Vexcel Imaging</h3>
-									<h4>August 2022 - Present</h4>
-									<p>I am part of a multidisciplinary team, we work following in an agile enviroment,following the scrum methodology.<br>
-										My main occupation is to develop using Python and Java (Spring Boot) as programming languages together with other
-										technologies such as PostgreSQL, PostGIS, AWS, etc. In my day a day I also use tools like Git, Jira, QGIS, among others.</p>
-									<p>As a developer I am in permanent contact with other teams and coworkers (DevOps, Production team, Sales team...)</p>
-								</div>
-							</div>
-							<hr/>
-							<div>
-								<div>
-									<h2>Associate Researcher</h2>
-									<h3>Universidad Rey Juan Carlos</h3>
-									<h4>October 2022 - Present</h4>
-									<p>Smart Cities, IoT</p>
-								</div>
-							</div>
-							<hr/>
-							<div>
-								<div>
-									<h2>Software Developer Intern</h2>
-									<h3>Vexcel Imaging</h3>
-									<h4>January 2022 - July 2022</h4>
-									<p>Developing in different technologies such as Python, Java (Spring) and PostgreSQL.<br>
-									Usage of tools like Git and Jira</p>
-								</div>
-							</div>
-						</div>
-					</section>
+                <p class="text-sm text-muted">
+                    <i class="fas fa-location-dot mr-1"></i> Madrid, Spain
+                </p>
 
-					<!-- Education-->
-					<section class="wrapper style3 fade-up" id="education">
-						<div class="inner">
-							<div>
-								<div>
-									<h2>Bachelor's degree in Telematics Engineering</h2>
-									<h3>Universidad Rey Juan Carlos</h3>
-									<h4>September 2017 - June 2022</h4>
-									<p>Telecommunication engineering with specialization in telematics engineering. In my Bachelor's degree final project
-										I was graded with the highest grade and with honors. You can have a look to the project <a href="#	tfg"> here</a>.</p>
-								</div>
-							</div>
-							<hr/>
-							<div>
-								<div>
-									<h2>High school</h2>
-									<h3>Liceo San Pablo</h3>
-									<h4>September 2015 - May 2017</h4>
-								</div>
-							</div>
-							<hr>
-							<div>
-								<div>
-									<h2>Summer exchange student to Ireland</h2>
-									<h3>Newbridge, Co. Kildare</h3>
-									<h4>2015, 2018</h4>
-								</div>
-							</div>
-						</div>
-					</section>
-									
+                <div class="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4 pt-2">
+                    <a href="assets/CV_Victor_Rincon.pdf" download class="bg-primary text-white px-6 py-3 rounded-xl font-medium hover:bg-gray-800 transition-all shadow-soft flex items-center justify-center gap-2">
+                        <i class="fas fa-file-download text-lg"></i>
+                        <span class="lang-en">Download CV</span><span class="lang-es">Descargar CV</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/victor-rincon-yepes/" target="_blank" rel="noopener" class="bg-white text-primary border border-gray-200 px-6 py-3 rounded-xl font-medium hover:bg-gray-50 transition-all shadow-sm flex items-center justify-center gap-2">
+                        <i class="fab fa-linkedin text-lg text-blue-600"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/rinvictor" target="_blank" rel="noopener" class="bg-white text-primary border border-gray-200 px-6 py-3 rounded-xl font-medium hover:bg-gray-50 transition-all shadow-sm flex items-center justify-center gap-2">
+                        <i class="fab fa-github text-lg"></i> GitHub
+                    </a>
+                </div>
+            </div>
 
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="https://github.com/rinvictor/TFG" class="image"><img src="images/invernadero.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner" id="tfg">
-									<h2>My end-of-degree thesis</h2>
-									<h4>Develop of an automation and monitoring distributed system for a greenhouse.</h4>
-									<p>This open-source project consists in the development of a complete distributed system that allows obtaining and storing the information collected by the sensors,
-										 visualizing it through a web application and a Telegram bot and taking actions using controllers, 
-										 both automatically and manually.</p>
+            <!-- Photo -->
+            <div class="lg:col-span-5 order-1 lg:order-2">
+                <div class="relative w-full max-w-[16rem] sm:max-w-xs lg:max-w-md mx-auto aspect-[4/5] rounded-3xl overflow-hidden shadow-floating border border-gray-100/50 bg-white">
+                    <img src="assets/img/victor.jpg"
+                         alt="Víctor Rincón Yepes"
+                         class="w-full h-full object-cover object-top">
+                </div>
+            </div>
+        </section>
 
-									<p>It was scored with the highest grade and with honors!</p>
-									<p>You can take a look to all the code and the documentation (in Spanish) <a href="https://github.com/rinvictor/TFG">here</a></p>
-									<p><a href="https://github.com/rinvictor/TFG/blob/main/doc/thesis/memoria.pdf">Here</a> is the thesis itself (in Spanish)</p>
-									<p>This is a demo of the web application and the Telegram bot:</p>
-									<div class="center">
-										<iframe width="560" height="315" src="https://www.youtube.com/embed/9Y3vQupzTOg" 
-										title="YouTube video player" frameborder="0" 
-										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-									</div>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="https://github.com/rinvictor" class="image"><img src="images/logo_github.png" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Other projects</h2>
-									<p>Here you can see other projects that I have been doing.</p>
-									<ul class="actions">
-										<li><a href="https://github.com/rinvictor">View more projects</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
+        <!-- Experience -->
+        <section id="experience" class="mb-16 md:mb-24">
+            <h2 class="text-xl md:text-2xl font-bold mb-6 md:mb-8">
+                <span class="lang-en">Experience</span><span class="lang-es">Experiencia</span>
+            </h2>
 
-				<!-- Two -->
-					<section id="two" class="wrapper style4 fade-up">
-						<div class="inner">
-							<h2>About me</h2>
-							<h4>I consider myself a responsible, versatile and enthusiast person. 
-								I have a facility for working in a team and I would like to continue learning.</h4>
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>Skills</h3>
-									<p><b>Programming</b> Python, Java, JavaScript, Go, C, ADA, Matlab, RISC-V assembler, Pascal...</p>
-									<p><b>Databases</b> SQL and NoSQL. I've worked mainly with PostgreSQL and MongoDB.</p>
-									<p>Knowledge in <b>computer networking</b> and their security (TCP, IP, IPsec, OSPF, HTTPS, VPNs...)</p>
-									<p><b>UNIX systems</b> administration and management.</p>
-									<p>Use of Office package at user level. </p>
-									<p><b>English</b>: Advanced (C1)</p>
-									<p><b>Spanish</b>: Native speaker</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-coffee"></span>
-									<h3>Interests</h3>
-									<p>Music: Saxophonist, Liceo San Pablo Music School</p>
-									<p>Sport: Volleyball, Madrid Volleyball Federation</p>
-									<p>Member of the academic board, college of Telecommunication Engineering, as students representative</p>
-									<p>Member of the Robotech students association (robotics and technology association)</p>
-									<p>I'm especially interested in learning more about big data, machine learning, data science, deep learning, neural networks...</p>
-								</section>
-							</div>
-						</div>
+            <div class="space-y-4 md:space-y-6">
+                <!-- Role 1 -->
+                <div class="bg-surface p-5 md:p-8 rounded-2xl md:rounded-3xl shadow-soft border border-gray-100 transition-transform hover:-translate-y-1 duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-4 gap-3">
+                        <div>
+                            <h3 class="text-lg md:text-xl font-bold">
+                                <span class="lang-en">Senior Computer Vision & Deep Learning Engineer</span>
+                                <span class="lang-es">Ingeniero Senior de Visión Artificial y Deep Learning</span>
+                            </h3>
+                            <p class="text-muted font-medium mt-1"><a href="https://vexceldata.com" target="_blank" rel="noopener" class="hover:text-accent transition-colors underline decoration-gray-300 underline-offset-4">Vexcel Group · Vexcel Data Program</a></p>
+                        </div>
+                        <span class="inline-block bg-gray-100 text-gray-700 text-xs md:text-sm font-semibold px-4 py-1.5 rounded-full whitespace-nowrap w-fit">
+                            <span class="lang-en">Dec 2024 — Present</span><span class="lang-es">Dic 2024 — Actualidad</span>
+                        </span>
+                    </div>
+                    <ul class="list-disc pl-5 space-y-2 text-sm md:text-base text-muted leading-relaxed marker:text-gray-300">
+                        <li>
+                            <span class="lang-en"><strong class="text-primary">Senior technical reference</strong> within a 6-person computer vision engineering team, contributing to architecture decisions and technical direction across parallel research and production projects.</span>
+                            <span class="lang-es"><strong class="text-primary">Referente técnico senior</strong> en un equipo de 6 ingenieros de visión artificial, contribuyendo a las decisiones de arquitectura y a la dirección técnica de proyectos centrados en investigación y en producción.</span>
+                        </li>
+                        <li>
+                            <span class="lang-en"><strong class="text-primary">Designed a bifurcated multitask architecture</strong> (Depth-focused backbone with normalized distance transform regressions) for instance-level building footprint segmentation: <strong class="text-primary">0.94 mIoU</strong> and <strong class="text-primary">0.93+ Object IoU</strong>, a +5 point improvement over the previous production model, currently in production.</span>
+                            <span class="lang-es"><strong class="text-primary">Diseñé una arquitectura multitarea</strong> (backbone basado en profundidad con regresión de transformada de distancia normalizada) para segmentación de huellas de edificios a nivel de instancia: <strong class="text-primary">0.94 mIoU</strong> y <strong class="text-primary">0.93+ Object IoU</strong>, una mejora de +5 puntos sobre el modelo anterior, actualmente en producción.</span>
+                        </li>
+                        <li>
+                            <span class="lang-en"><strong class="text-primary">Led the post-disaster property damage assessment pipeline</strong> for insurance claims and emergency response from aerial imagery, improving F1 score <strong class="text-primary">from 0.50 to 0.80</strong>; deployed as a revenue-generating product.</span>
+                            <span class="lang-es"><strong class="text-primary">Lideré el pipeline de evaluación de daños en propiedades tras desastres</strong> para reclamaciones de seguros y respuesta de emergencia a partir de imágenes aéreas, mejorando el F1 score <strong class="text-primary">de 0.50 a 0.80</strong>; desplegado como producto con ingresos recurrentes.</span>
+                        </li>
+                        <li>
+                            <span class="lang-en">Primary technical point of contact for two external annotation vendors, defining labeling guidelines and quality standards for aerial imagery datasets.</span>
+                            <span class="lang-es">Punto de contacto técnico principal con dos proveedores externos de anotación, definiendo guías de etiquetado y estándares de calidad para datasets de imágenes aéreas.</span>
+                        </li>
+                    </ul>
+                </div>
 
-					</section>
+                <!-- Role 2 -->
+                <div class="bg-surface p-5 md:p-8 rounded-2xl md:rounded-3xl shadow-soft border border-gray-100 transition-transform hover:-translate-y-1 duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-4 gap-3">
+                        <div>
+                            <h3 class="text-lg md:text-xl font-bold">
+                                <span class="lang-en">Computer Vision & Deep Learning Engineer</span>
+                                <span class="lang-es">Ingeniero de Visión Artificial y Deep Learning</span>
+                            </h3>
+                            <p class="text-muted font-medium mt-1"><a href="https://vexceldata.com" target="_blank" rel="noopener" class="hover:text-accent transition-colors underline decoration-gray-300 underline-offset-4">Vexcel Group · Vexcel Data Program</a></p>
+                        </div>
+                        <span class="inline-block bg-gray-50 text-gray-500 text-xs md:text-sm font-semibold px-4 py-1.5 rounded-full border border-gray-100 whitespace-nowrap w-fit">
+                            <span class="lang-en">Jan 2024 — Dec 2024</span><span class="lang-es">Ene 2024 — Dic 2024</span>
+                        </span>
+                    </div>
+                    <ul class="list-disc pl-5 space-y-2 text-sm md:text-base text-muted leading-relaxed marker:text-gray-300">
+                        <li>
+                            <span class="lang-en"><strong class="text-primary">Designed and trained task-specific deep learning models</strong> (semantic and instance segmentation, object detection and regression) on large-scale aerial orthoimagery, using CNN backbones (ResNet, EfficientNet, HRNet) and vision transformers (ViT, Swin) to detect solar panels, chimneys, AC units and damage indicators.</span>
+                            <span class="lang-es"><strong class="text-primary">Diseñé y entrené modelos de deep learning específicos por tarea</strong> (segmentación semántica y de instancias, detección de objetos y regresión) sobre ortoimágenes aéreas a gran escala, con backbones CNN (ResNet, EfficientNet, HRNet) y vision transformers (ViT, Swin) para detectar paneles solares, chimeneas, unidades de aire acondicionado e indicadores de daño.</span>
+                        </li>
+                        <li>
+                            <span class="lang-en"><strong class="text-primary">Benchmarked and adapted state-of-the-art segmentation architectures</strong> (SegFormer, DeepLab, HRNet, SAM3, DINOv2, among others) to the geospatial aerial imagery domain, establishing production baselines.</span>
+                            <span class="lang-es"><strong class="text-primary">Evalué y adapté arquitecturas de segmentación del estado del arte</strong> (SegFormer, DeepLab, HRNet, SAM3, DINOv2, entre otras) al dominio de imágenes aéreas geoespaciales, estableciendo líneas base de producción.</span>
+                        </li>
+                        <li>
+                            <span class="lang-en">Implemented <strong class="text-primary">active learning</strong> pipelines for aerial image quality control, selecting high-uncertainty samples and routing them for annotation in CVAT, reducing manual labeling overhead.</span>
+                            <span class="lang-es">Implementé pipelines de <strong class="text-primary">active learning</strong> para el control de calidad de imágenes aéreas, seleccionando muestras de alta incertidumbre y enviándolas a anotación en CVAT, reduciendo el esfuerzo de etiquetado manual.</span>
+                        </li>
+                    </ul>
+                </div>
 
+                <!-- Role 3 -->
+                <div class="bg-surface p-5 md:p-8 rounded-2xl md:rounded-3xl shadow-soft border border-gray-100 transition-transform hover:-translate-y-1 duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-4 gap-3">
+                        <div>
+                            <h3 class="text-lg md:text-xl font-bold">
+                                <span class="lang-en">Software Engineer</span><span class="lang-es">Ingeniero de Software</span>
+                            </h3>
+                            <p class="text-muted font-medium mt-1"><a href="https://vexceldata.com" target="_blank" rel="noopener" class="hover:text-accent transition-colors underline decoration-gray-300 underline-offset-4">Vexcel Group · Vexcel Data Program</a></p>
+                        </div>
+                        <span class="inline-block bg-gray-50 text-gray-500 text-xs md:text-sm font-semibold px-4 py-1.5 rounded-full border border-gray-100 whitespace-nowrap w-fit">
+                            <span class="lang-en">Aug 2022 — Jan 2024</span><span class="lang-es">Ago 2022 — Ene 2024</span>
+                        </span>
+                    </div>
+                    <ul class="list-disc pl-5 space-y-2 text-sm md:text-base text-muted leading-relaxed marker:text-gray-300">
+                        <li>
+                            <span class="lang-en"><strong class="text-primary">Technical lead for core backend geospatial services</strong>, owning full-cycle development from requirements analysis to production deployment, following Scrum/Agile.</span>
+                            <span class="lang-es"><strong class="text-primary">Líder técnico de los servicios geoespaciales backend</strong>, responsable del ciclo completo desde el análisis de requisitos hasta el despliegue en producción, siguiendo metodologías Scrum/Agile methodologies.</span>
+                        </li>
+                        <li>
+                            <span class="lang-en">Built scalable backend web services and REST APIs (Java Spring Boot, JPA, Hibernate) integrated with geospatial data pipelines, deployed on Kubernetes and AWS (Lambda, S3, SQS).</span>
+                            <span class="lang-es">Construí servicios web backend escalables y APIs REST (Java Spring Boot, JPA, Hibernate) integrados con pipelines de datos geoespaciales, desplegados en Kubernetes y AWS (Lambda, S3, SQS).</span>
+                        </li>
+                        <li>
+                            <span class="lang-en">Designed and maintained spatial databases (PostgreSQL/PostGIS) for large-scale property data, including complex geometry manipulation and GIS processing.</span>
+                            <span class="lang-es">Diseñé y mantuvo bases de datos espaciales (PostgreSQL/PostGIS) para datos de propiedades a gran escala, incluyendo manipulación compleja de geometrías y procesamiento GIS.</span>
+                        </li>
+                    </ul>
+                </div>
 
+                <!-- Role 4 -->
+                <div class="bg-surface p-5 md:p-8 rounded-2xl md:rounded-3xl shadow-soft border border-gray-100 transition-transform hover:-translate-y-1 duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-4 gap-3">
+                        <div>
+                            <h3 class="text-lg md:text-xl font-bold">
+                                <span class="lang-en">Software Development Intern</span><span class="lang-es">Becario de Desarrollo de Software</span>
+                            </h3>
+                            <p class="text-muted font-medium mt-1"><a href="https://vexceldata.com" target="_blank" rel="noopener" class="hover:text-accent transition-colors underline decoration-gray-300 underline-offset-4">Vexcel Group · Vexcel Data Program</a></p>
+                        </div>
+                        <span class="inline-block bg-gray-50 text-gray-500 text-xs md:text-sm font-semibold px-4 py-1.5 rounded-full border border-gray-100 whitespace-nowrap w-fit">
+                            <span class="lang-en">Jan 2022 — May 2022</span><span class="lang-es">Ene 2022 — May 2022</span>
+                        </span>
+                    </div>
+                    <p class="text-sm md:text-base text-muted leading-relaxed">
+                        <span class="lang-en">Assisted in the development of web applications and internal tools using Java and Angular.</span>
+                        <span class="lang-es">Asistí en el desarrollo de aplicaciones web y herramientas internas con Java y Angular.</span>
+                    </p>
+                </div>
+            </div>
+        </section>
 
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Get in touch</h2>
-							<div class="split style1">
-								<section>
-									<form id="form" action="https://formspree.io/f/mleznbea" method="POST">
-										<div class="fields">
-											<div class="field half">
-												<label>
-													Your name:<input type="text" name="name">
-												</label>
-											</div>
-											<div class="field half">
-												<label>
-													Your email:<input type="email" name="email">
-												</label>
-											</div>
-											<div class="field">
-												<label>
-													Message: <textarea name="message" rows="5"></textarea>
-												</label>
-											</div>
-											
-										</div>
+        <!-- Tech stack & Education -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-16 md:mb-24">
 
-   										<!-- your other form fields go here -->
-  										<button type="submit">Send Message</button>
-									</form>
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Email</h3>
-											<span><a href="mailto:rinvictor@gmail.com">rinvictor@gmail.com</a></span>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>+34 691 376 463</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="https://github.com/rinvictor" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="https://www.linkedin.com/in/victor-rincon-yepes/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-										<li>
-											<h3>Currículum Vitae</h3>
-												<a href="docs/CV_Victor_Manuel_Rincón_Yepes_ES.pdf">Spanish Version</a><br>
-												<a href="docs/CV_EN_Victor_Rincon_Yepes_202210.pdf">English Version</a>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
+            <!-- Tech Stack -->
+            <div class="bg-surface p-5 md:p-8 rounded-2xl md:rounded-3xl shadow-soft border border-gray-100">
+                <h2 class="text-xl md:text-2xl font-bold mb-4 md:mb-6">Tech Stack</h2>
+                <div class="space-y-4">
+                    <div>
+                        <p class="text-xs font-bold uppercase tracking-wider text-muted mb-2">ML &amp; Computer Vision</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 rounded-xl text-xs md:text-sm font-semibold text-gray-700">Python</span>
+                            <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 rounded-xl text-xs md:text-sm font-semibold text-gray-700">PyTorch</span>
+                            <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 rounded-xl text-xs md:text-sm font-semibold text-gray-700">HuggingFace</span>
+                            <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 rounded-xl text-xs md:text-sm font-semibold text-gray-700">OpenCV</span>
+                            <span class="px-3 py-1.5 bg-blue-50 border border-blue-100 rounded-xl text-xs md:text-sm font-semibold text-accent">Vision Transformers</span>
+                            <span class="px-3 py-1.5 bg-blue-50 border border-blue-100 rounded-xl text-xs md:text-sm font-semibold text-accent">Foundation Models</span>
+                            <span class="px-3 py-1.5 bg-blue-50 border border-blue-100 rounded-xl text-xs md:text-sm font-semibold text-accent">Segmentation / Detection</span>
+                            <span class="px-3 py-1.5 bg-blue-50 border border-blue-100 rounded-xl text-xs md:text-sm font-semibold text-accent">Active Learning</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold uppercase tracking-wider text-muted mb-2">Remote Sensing &amp; GIS</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 bg-emerald-50 border border-emerald-100 rounded-xl text-xs md:text-sm font-semibold text-emerald-700">QGIS / GeoAI</span>
+                            <span class="px-3 py-1.5 bg-emerald-50 border border-emerald-100 rounded-xl text-xs md:text-sm font-semibold text-emerald-700">GDAL / Rasterio</span>
+                            <span class="px-3 py-1.5 bg-emerald-50 border border-emerald-100 rounded-xl text-xs md:text-sm font-semibold text-emerald-700">PostgreSQL / PostGIS</span>
+                            <span class="px-3 py-1.5 bg-emerald-50 border border-emerald-100 rounded-xl text-xs md:text-sm font-semibold text-emerald-700">SAR</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold uppercase tracking-wider text-muted mb-2">MLOps &amp; Backend</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 bg-orange-50 border border-orange-100 rounded-xl text-xs md:text-sm font-semibold text-orange-700">AWS</span>
+                            <span class="px-3 py-1.5 bg-orange-50 border border-orange-100 rounded-xl text-xs md:text-sm font-semibold text-orange-700">Docker / Kubernetes</span>
+                            <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 rounded-xl text-xs md:text-sm font-semibold text-gray-700">MLflow / Airflow</span>
+                            <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 rounded-xl text-xs md:text-sm font-semibold text-gray-700">CVAT</span>
+                            <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 rounded-xl text-xs md:text-sm font-semibold text-gray-700">Java Spring Boot</span>
+                            <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 rounded-xl text-xs md:text-sm font-semibold text-gray-700">REST APIs / SQL</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold uppercase tracking-wider text-muted mb-2"><span class="lang-en">Languages</span><span class="lang-es">Idiomas</span></p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 rounded-xl text-xs md:text-sm font-semibold text-gray-700">
+                                <span class="lang-en">Spanish: Native</span><span class="lang-es">Español: Nativo</span>
+                            </span>
+                            <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 rounded-xl text-xs md:text-sm font-semibold text-gray-700">
+                                <span class="lang-en">English: Full professional (C1)</span><span class="lang-es">Inglés: Profesional completo (C1)</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-			</div>
+            <!-- Education -->
+            <div id="education" class="bg-surface p-5 md:p-8 rounded-2xl md:rounded-3xl shadow-soft border border-gray-100">
+                <h2 class="text-xl md:text-2xl font-bold mb-4 md:mb-6">
+                    <span class="lang-en">Education</span><span class="lang-es">Educación</span>
+                </h2>
+                <div class="space-y-4 md:space-y-6">
+                    <div>
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 gap-1">
+                            <h3 class="font-bold text-base md:text-lg">
+                                <span class="lang-en">MSc Artificial Intelligence</span><span class="lang-es">Máster en Inteligencia Artificial</span>
+                            </h3>
+                            <span class="text-xs font-bold bg-gray-100 px-2 py-1 rounded text-muted w-fit whitespace-nowrap">2023 - 2025</span>
+                        </div>
+                        <p class="text-xs md:text-sm font-medium mb-2">
+                            <a href="https://www.universidadviu.com" target="_blank" rel="noopener" class="text-accent hover:underline underline-offset-4">
+                                <span class="lang-en">Valencian International University (VIU)</span><span class="lang-es">Universidad Internacional de Valencia (VIU)</span>
+                            </a>
+                        </p>
+                        <p class="text-xs md:text-sm text-muted">
+                            <span class="lang-en">Thesis: Medical Image Diagnosis with Vision Transformers — a comparative study of CNN vs. ViT on dermatoscopic classification (ISIC 2020), with a pruning and quantization pipeline for edge deployment. Swin Transformer outperformed modern CNNs while remaining computationally efficient.</span>
+                            <span class="lang-es">Tesis: Diagnóstico de imágenes médicas con Vision Transformers — estudio comparativo de CNN vs. ViT en clasificación dermatoscópica (ISIC 2020), con un pipeline de pruning y cuantización para despliegue en edge. Swin Transformer superó a las CNN modernas manteniendo eficiencia computacional.</span>
+                        </p>
+                    </div>
+                    <div class="w-full h-px bg-gray-100"></div>
+                    <div>
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 gap-1">
+                            <h3 class="font-bold text-base md:text-lg">
+                                <span class="lang-en">BSc Telecommunications Engineering</span><span class="lang-es">Grado en Ingeniería de Telecomunicaciones</span>
+                            </h3>
+                            <span class="text-xs font-bold bg-gray-100 px-2 py-1 rounded text-muted w-fit whitespace-nowrap">2017 - 2022</span>
+                        </div>
+                        <p class="text-xs md:text-sm font-medium mb-2">
+                            <a href="https://www.urjc.es" target="_blank" rel="noopener" class="text-accent hover:underline underline-offset-4">
+                                <span class="lang-en">Rey Juan Carlos University (URJC)</span><span class="lang-es">Universidad Rey Juan Carlos (URJC)</span>
+                            </a>
+                        </p>
+                        <p class="text-xs md:text-sm text-muted">
+                            <span class="lang-en">Specialization in Telematics Engineering. Thesis: Development of a monitoring and automation system for a greenhouse. Awarded with Highest Honors.</span>
+                            <span class="lang-es">Especialización en Ingeniería Telemática. Tesis: Desarrollo de un sistema de monitorización y automatización para un invernadero. Calificado con Matrícula de Honor.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style2-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li>
-						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						<li><a href="#intro">Víctor Rincón Yepes</a></li>
-					</ul>
-				</div>
-			</footer>
+        <!-- Research & Writing -->
+        <section id="research">
+            <h2 class="text-xl md:text-2xl font-bold mb-6 md:mb-8">
+                <span class="lang-en">Selected Research & Writing</span><span class="lang-es">Investigación y Publicaciones</span>
+            </h2>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<!-- added -->
-			<script src="assets/js/form.js"></script>
-			<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <div class="space-y-4">
 
-	</body>
+                <!-- Publication 1 -->
+                <details class="group bg-surface rounded-2xl md:rounded-3xl shadow-soft border border-gray-100 transition-all duration-300">
+                    <summary class="flex justify-between items-center cursor-pointer p-4 md:p-6 hover:bg-gray-50/50 rounded-2xl md:rounded-3xl transition-colors">
+                        <div class="pr-4 md:pr-8">
+                            <div class="flex items-center gap-3 mb-2 md:mb-3">
+                                <span class="text-[10px] md:text-xs font-bold tracking-wider uppercase text-indigo-600 bg-indigo-50 px-2 md:px-3 py-1 rounded-full">arXiv Preprint, 2026</span>
+                            </div>
+                            <h3 class="font-bold text-base md:text-lg group-hover:text-accent transition-colors leading-tight">Phylogenetic signal in marine mammal and bird vocalizations captured by audio foundation models</h3>
+                        </div>
+                        <div class="w-6 h-6 md:w-8 md:h-8 flex items-center justify-center rounded-full bg-gray-50 text-gray-400 group-hover:text-primary transition-all shrink-0 toggle-icon">
+                            <i class="fas fa-chevron-down text-sm"></i>
+                        </div>
+                    </summary>
+                    <div class="px-4 md:px-6 pb-4 md:pb-6 text-muted border-t border-gray-100 pt-4 mt-2 text-sm leading-relaxed">
+                        <p>
+                            <span class="lang-en">Audio foundation-model embeddings naturally recover phylogenetic structure across 32 species of marine mammals and 20 bird species. They contain structure nobody trained them for, and domain-specific pretraining does not necessarily improve performance.</span>
+                            <span class="lang-es">Los embeddings de modelos fundacionales de audio recuperan de forma natural la estructura filogenética en 32 especies de mamíferos marinos y 20 especies de aves. Contienen estructuras para las que nadie los entrenó, y el preentrenamiento específico de dominio no mejora necesariamente el rendimiento.</span>
+                        </p>
+                        <a href="https://arxiv.org/abs/2607.22458" target="_blank" rel="noopener" class="inline-flex items-center gap-2 mt-3 text-accent font-semibold hover:underline underline-offset-4">
+                            <i class="fas fa-arrow-up-right-from-square text-xs"></i>
+                            <span class="lang-en">Read on arXiv</span><span class="lang-es">Leer en arXiv</span>
+                        </a>
+                    </div>
+                </details>
+
+                <!-- Publication 2 -->
+                <details class="group bg-surface rounded-2xl md:rounded-3xl shadow-soft border border-gray-100 transition-all duration-300">
+                    <summary class="flex justify-between items-center cursor-pointer p-4 md:p-6 hover:bg-gray-50/50 rounded-2xl md:rounded-3xl transition-colors">
+                        <div class="pr-4 md:pr-8">
+                            <div class="flex items-center gap-3 mb-2 md:mb-3">
+                                <span class="text-[10px] md:text-xs font-bold tracking-wider uppercase text-emerald-600 bg-emerald-50 px-2 md:px-3 py-1 rounded-full">GeoAwesome, 2026</span>
+                            </div>
+                            <h3 class="font-bold text-base md:text-lg group-hover:text-accent transition-colors leading-tight">Faster than Maps: How SAR Satellites Expose the Blind Spots of Commercial Cartography</h3>
+                        </div>
+                        <div class="w-6 h-6 md:w-8 md:h-8 flex items-center justify-center rounded-full bg-gray-50 text-gray-400 group-hover:text-primary transition-all shrink-0 toggle-icon">
+                            <i class="fas fa-chevron-down text-sm"></i>
+                        </div>
+                    </summary>
+                    <div class="px-4 md:px-6 pb-4 md:pb-6 text-muted border-t border-gray-100 pt-4 mt-2 text-sm leading-relaxed">
+                        <p>
+                            <span class="lang-en">Proposes a hybrid Synthetic Aperture Radar (SAR) and GeoAI monitoring pipeline to overcome cartographic lag in rapidly urbanizing regions, focused on large-scale infrastructure tracking.</span>
+                            <span class="lang-es">Propone un pipeline de monitorización híbrido de Radar de Apertura Sintética (SAR) y GeoAI para superar el retraso cartográfico en regiones de rápida urbanización, centrado en el seguimiento de infraestructuras a gran escala.</span>
+                        </p>
+                        <a href="https://geoawesome.com/faster-than-maps-how-sar-satellites-expose-the-blind-spots-of-commercial-cartography/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 mt-3 text-accent font-semibold hover:underline underline-offset-4">
+                            <i class="fas fa-arrow-up-right-from-square text-xs"></i>
+                            <span class="lang-en">Read on GeoAwesome</span><span class="lang-es">Leer en GeoAwesome</span>
+                        </a>
+                    </div>
+                </details>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-gray-200 bg-white">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 py-6 md:py-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs md:text-sm font-medium text-muted text-center sm:text-left">
+            <p>© 2026 Víctor Rincón Yepes.</p>
+            <div class="flex items-center gap-4">
+                <a href="mailto:rinvictor@gmail.com" aria-label="Email" class="hover:text-primary transition-colors"><i class="fas fa-envelope text-base"></i></a>
+                <a href="https://www.linkedin.com/in/victor-rincon-yepes/" target="_blank" rel="noopener" aria-label="LinkedIn" class="hover:text-primary transition-colors"><i class="fab fa-linkedin text-base"></i></a>
+                <a href="https://github.com/rinvictor" target="_blank" rel="noopener" aria-label="GitHub" class="hover:text-primary transition-colors"><i class="fab fa-github text-base"></i></a>
+                <span>Madrid, Spain</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
 </html>
